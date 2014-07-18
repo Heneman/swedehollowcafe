@@ -1,0 +1,81 @@
+!!! 5
+%html( lang="en" )
+  %head
+    %meta( charset="utf-8" )
+    %meta( http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" )
+    %meta( name="viewport" content="width=device-width, initial-scale=1.0" )
+    %title= content_for?( :title ) ? yield( :title ) : "Swede Hollow Cafe"
+    %link{ :href => "http://fonts.googleapis.com/css?family=Open+Sans:400,600|Roboto+Slab:400,700", :rel => "stylesheet", :type => "text/css" }
+
+    = csrf_meta_tags
+    / Le HTML5 shim, for IE6-8 support of HTML elements
+    /[if lt IE 9]
+    = javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.1/html5shiv.js"
+    = stylesheet_link_tag "application", :media => "all"
+    / = favicon_link_tag 'apple-touch-icon-144x144-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '144x144'
+    / = favicon_link_tag 'apple-touch-icon-114x114-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '114x114'
+    / = favicon_link_tag 'apple-touch-icon-72x72-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '72x72'
+    / = favicon_link_tag 'apple-touch-icon-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png'
+    / = favicon_link_tag 'favicon.ico', :rel => 'shortcut icon'
+    = javascript_include_tag "application"
+
+  %body
+    %div.container-fluid
+      %div.row-fluid
+        %div.col-md-4#address-col
+          %div.col-md-6
+          %div.col-md-6
+            %address#address
+              = link_to( "https://www.google.com/maps/place/Swede+Hollow+Cafe/@44.959263,-93.071857,17z/", :target => "_blank" ) do
+                725 7th St E
+                %br
+                St Paul, MN 55106
+            
+        %div.col-md-4
+          = image_tag( "swede-hollow.png", class: "img-responsive", id: "logo" )
+
+        %div.col-md-4#phone-col
+          %div.col-md-6
+            %div#phone
+              %a{ href: "tel:6517768810" }
+                = number_to_phone( 6517768810, area_code: true )
+
+          %div.col-md-6
+
+    %div.container-fluid
+      %div.row-fluid.nav-row-container
+        %div.row-fluid#nav-row
+          %div.col-md-4
+          %div.col-md-4
+            %ul.nav.nav-pills.nav-justified
+              %li{ class: "nav-links #{ params[:action] == 'home' ? 'active' : '' }" }
+                = link_to "Home", "home"
+              %li{ class: "nav-links #{ params[:action] == 'gallery' ? 'active' : '' }" }
+                = link_to "Gallery", "gallery"
+              %li{ class: "nav-links #{ params[:action] == 'menu' ? 'active' : '' } dropdown" }
+                = link_to "Menu", "menu"
+              %li{ class: "nav-links #{ params[:action] == 'catering' ? 'active' : '' }" }
+                = link_to "Catering", "catering"
+
+          %div.col-md-4
+
+    = yield
+
+    %div.container-fluid#footer
+      %div.row-fluid#footer-row
+        %div.col-md-2
+        %div.col-md-8
+
+          %hr#footer-border
+
+          %div.col-md-12#hours
+            %span#weekday-hours
+              Mon - Fri:
+            6:30a - 3:00p
+
+            %br
+
+            %span#weekend-hours Sat:
+            8:00a - 2:00p
+
+        %div.col-md-2

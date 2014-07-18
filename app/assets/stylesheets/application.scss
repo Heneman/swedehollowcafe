@@ -1,0 +1,213 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require jquery.fancybox.css
+ *= require jquery.fancybox-buttons.css
+ *= require_tree .
+ *= require_self
+ */
+
+// Custom CSS Changes by Kyle
+
+* {
+  border-radius: 0 !important;
+}
+
+.sans-serif {
+	font-family: "Open Sans";
+	font-weight: 400;
+}
+
+#logo {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#address-col {
+	margin-top: 37px;
+}
+
+#address-col a:hover {
+	text-decoration: none !important;
+}
+
+#phone-col {
+	margin-top:50px;
+}
+
+#phone-col a:hover {
+	text-decoration: none !important;
+}
+
+#nav-row {
+	margin-top: 30px;
+}
+
+.nav-row-container {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.nav-links {
+	font-size: 20px;
+}
+
+#menu-nav {
+	padding-top: 15px;
+}
+
+.page-header {
+	border: 1px solid #724923;
+	padding: 6px;
+}
+
+.header-container {
+	border: 2px solid #724923;
+	padding: 6px;
+}
+
+.main-header {
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+#home-image {
+	margin-top: 40px;
+	border: 1px solid #724923;
+	padding: 6px;
+}
+
+#home-image #quiche_wide {
+	border: 2px solid #724923;
+	padding: 6px;
+}
+
+.content-text h1, h2, h3 {
+	text-align: center;
+}
+
+.image-box img {
+  margin: 10px auto 10px auto;
+	border: #724923 1px solid;  
+	padding: 5px;
+}
+
+#footer {
+	margin-top: 50px;
+}
+
+#footer-row hr#footer-border {
+	color: #724923;
+	background-color: #724923;
+	height: 2px;
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+#hours {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+body span#weekday-hours {
+	font-weight: 600;
+	margin-right: 40px;
+}
+
+body span#weekend-hours {
+	font-weight: 600;
+	margin-right: 91px;
+}
+
+#menu-nav {
+	font-size: 16px;
+}
+
+.to-top-link {
+	float: right;
+}
+
+.item-price {
+	text-align: right;
+}
+
+#breakfast-hours {
+	text-align: center;
+}
+
+#menu-header {
+	font-weight: 500;
+}
+
+#menu-sub-header {
+	font-size: 14px;
+	padding-bottom: 10px;
+}
+
+.lunch-portions {
+	text-align: center;
+	width: 20%;
+	font-weight: 500;
+}
+
+.drink-portions {
+	text-align: center;
+	font-weight: 500;
+	width: 15%;
+}
+
+table tr td div.food-desc {
+	padding-bottom: 15px;
+	font-size: 14px;
+}
+
+#lightbox {
+	margin: auto auto auto auto;
+}
+
+@media screen and (min-width: 992px) {
+	#address {
+		text-align: right;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	#logo {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#address-col {
+		margin-top: -25px;
+	}
+
+	#address {
+		text-align: center;
+	}
+
+	#phone {
+		text-align: center;
+	}
+
+	#hours {
+		text-align: center;
+	}
+
+	#copyright {
+		text-align: center;
+		margin-top: 30px;
+	}
+
+	#phone-col {
+		margin-top: 30px;
+	}
+}

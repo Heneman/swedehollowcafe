@@ -1,0 +1,867 @@
+%div.container-fluid
+  %div.row-fluid
+    %div.col-md-2
+    %div.col-md-8.page-header
+      %div.container-fluid.header-container
+        %h3.main-header
+          Menu
+    %div.col-md-2
+
+%br
+
+%div.container-fluid
+  %a#top
+  %div.row-fluid.nav-row-container
+    %div.row-fluid#menu-nav
+      %div.col-md-4
+      %div.col-md-4
+        %ul.nav.nav-pills.nav-justified
+          %li
+            = link_to "Bakery", "#bakery"
+          %li
+            = link_to "Breakfast", "#breakfast"
+          %li
+            = link_to "Lunch", "#lunch"
+          %li
+            = link_to "Beverages", "#beverages"
+
+      %div.col-md-4
+
+%br
+
+%div.container-fluid
+  %div.row-fluid#bakery
+    %div.col-md-3
+    %div.col-md-6
+      %h3#bakery
+        Bakery
+      %br
+      %div.table-responsive
+        %table.table.table-striped.sans-serif
+          %tr
+            %td.item-name
+              %h6
+                Caramel Roll
+            %td.item-price
+              %h6
+                $2.99
+          %tr
+            %td.item-name
+              %h6
+                Bacon Caramel Roll
+            %td.item-price
+              %h6
+                $3.50
+          %tr
+            %td.item-name
+              %h6
+                Cinnamon Roll
+            %td.item-price
+              %h6
+                $2.75
+          %tr
+            %td.item-name
+              %h6
+                Coffee Cake
+            %td.item-price
+              %h6
+                $3.50
+          %tr
+            %td.item-name
+              %h6
+                Scone
+            %td.item-price
+              %h6
+                $2.50
+          %tr
+            %td.item-name
+              %h6
+                Cookie
+            %td.item-price
+              %h6
+                $1.25
+          %tr
+            %td.item-name
+              %h6
+                Cake Cookie
+            %td.item-price
+              %h6
+                $1.65
+          %tr
+            %td.item-name
+              %h6
+                Shortbread
+            %td.item-price
+              %h6
+                $1.25
+          %tr
+            %td.item-name
+              %h6
+                Biscotti
+            %td.item-price
+              %h6
+                $1.50
+          %tr
+            %td.item-name
+              %h6
+                Bar
+            %td.item-price
+              %h6
+                $3.00
+
+      %div.container-fluid.to-top-link
+        = link_to "#top" do
+          Back To Top &#8593;
+
+    %div.col-md-3
+
+%br
+%br
+
+%div.container-fluid
+  %div.row-fluid#breakfast
+    %div.col-md-3
+    %div.col-md-6
+      %h3
+        Breakfast - Morning
+      %h6.sans-serif#breakfast-hours
+        Served weekdays from 6:30a - 10:30a
+      %br
+      %div.table-responsive
+        %table.table.table-striped
+          %tr
+            %td
+              %h6
+                Breakfast Sandwich
+              %div.sans-serif.food-desc
+                Scrambled eggs and cheese on a croissant.  Add tomato and spinach, beef, turkey or ham for $1.00 each
+            %td
+              %h6
+                $5.50
+          %tr
+            %td
+              %h6
+                Scrambled Eggs (1)
+              %div.sans-serif.food-desc
+                Eggs.  All scrambled up.  Add more for $0.75 each egg
+            %td
+              %h6
+                $1.00
+          %tr
+            %td
+              %h6
+                Toast
+              %div.sans-serif.food-desc
+                Wheat or sourdough.  GF white available for $1.00 more
+            %td
+              %h6
+                $1.50
+          %tr
+            %td
+              %h6
+                Scrambled Eggs and Toast
+              %div.sans-serif.food-desc
+                Two scrambled eggs and toast
+            %td
+              %h6
+                $3.75
+          %tr
+            %td
+              %h6
+                Baked Hashbrowns Platter
+              %div.sans-serif.food-desc
+                Our Baked Hashbrowns with two scrambled eggs and toast.  A complete breakfast
+            %td
+              %h6
+                $8.15
+          %tr
+            %td
+              %h6
+                Deluxe Oatmeal
+              %div.sans-serif.food-desc
+                Oatmeal, our house-made granola, and bananas topped with steamed milk
+            %td
+              %h6
+                $5.25
+          %tr
+            %td
+              %h6
+                Granola and Milk
+              %div.sans-serif.food-desc
+                Our version of Muesli.  House-made granola and steamed or cold milk topped with berries
+            %td
+              %h6
+                $3.99
+    %div.col-md-3
+
+%br
+%br
+
+%div.container-fluid
+  %div.row-fluid#breakfast-all-day
+    %div.col-md-3
+    %div.col-md-6
+      %h3
+        Breakfast - All Day
+      %br
+      %div.table-responsive
+        %table.table.table-striped
+          %tr
+            %td
+              %h6
+                Quiche
+              %div.sans-serif.food-desc
+                Meat or Veggie.  Options change daily.
+            %td
+              %h6
+                $5.75
+          %tr
+            %td
+              %h6
+                French Toast
+              %div.sans-serif.food-desc
+                Caramelized French Toast made with brioche
+            %td
+              %h6
+                $5.75
+          %tr
+            %td
+              %h6
+                Baked Hashbrowns
+              %div.sans-serif.food-desc
+                Eggs, hashbrowns, ham, sausage, bacon and cheddar.
+            %td
+              %h6
+                $5.75
+          %tr
+            %td
+              %h6
+                Fruit Cup
+              %div.sans-serif.food-desc
+                Seasonal fruits in a cup.
+            %td
+              %h6
+                $4.25
+          %tr
+            %td
+              %h6
+                Parfait
+              %div.sans-serif.food-desc
+                Yogurt and house-made granola topped with seasonal fruit
+            %td
+              %h6
+                $4.99
+          %tr
+            %td
+              %h6
+                Hard Boiled Egg
+            %td
+              %h6
+                $1.00
+
+      %div.container-fluid.to-top-link
+        = link_to "#top" do
+          Back To Top &#8593;
+
+    %div.col-md-3
+
+%br
+%br
+
+%div.container-fluid
+  %div.row-fluid#lunch
+    %div.col-md-3
+    %div.col-md-6
+      %h3
+        Lunch
+      %h6.sans-serif#breakfast-hours
+        Available after 10:30a
+      %br
+      %div.table-responsive
+        %table.table.table-striped
+          %tr
+            %th#menu-header
+              Sandwiches
+              %div.sans-serif#menu-sub-header
+                All come with chips and a pickle spear
+            %th.lunch-portions
+              Half
+            %th.lunch-portions
+              Whole
+          %tr
+            %td
+              %h6
+                Turkey Cheddar
+              %div.sans-serif.food-desc
+                Turkey, cheddar, cucumber, tomato, red onion, and our basil mayonaise on house-made foccacia
+            %td.lunch-portions
+              %h6
+                $5.00
+            %td.lunch-portions
+              %h6
+                $8.99
+          %tr
+            %td
+              %h6
+                Turkey Swiss
+              %div.sans-serif.food-desc
+                Turkey, swiss, romaine, tomato and our honey mustard mayonaise on toasted ciabatta
+            %td.lunch-portions
+              %h6
+                $5.00
+            %td.lunch-portions
+              %h6
+                $8.99
+          %tr
+            %td
+              %h6
+                Ham Swiss
+              %div.sans-serif.food-desc
+                Ham, swiss, romaine, tomato and our honey mustard mayonaise on toasted ciabatta
+            %td.lunch-portions
+              %h6
+                $5.00
+            %td.lunch-portions
+              %h6
+                $8.99
+          %tr
+            %td
+              %h6
+                Ham Brie
+              %div.sans-serif.food-desc
+                Ham, brie, romaine, and dijon mustard on toasted ciabatta
+            %td.lunch-portions
+              %h6
+                $5.00
+            %td.lunch-portions
+              %h6
+                $8.99
+          %tr
+            %td
+              %h6
+                Roast Beef Provolone
+              %div.sans-serif.food-desc
+                Roast beef, provolone, tomato, roasted red onions and pesto on toasted ciabatta
+            %td.lunch-portions
+              %h6
+                $5.00
+            %td.lunch-portions
+              %h6
+                $8.99
+          %tr
+            %td
+              %h6
+                Roast Beef Cheddar
+              %div.sans-serif.food-desc
+                Roast beef, cheddar, red onion, cucumber, romaine, and roasted red pepper horseradish mayonaise on toasted ciabatta
+            %td.lunch-portions
+              %h6
+                $5.00
+            %td.lunch-portions
+              %h6
+                $8.99
+          %tr
+            %td
+              %h6
+                Mediterranean Veggie
+              %div.sans-serif.food-desc
+                Kalamata olive tapanade, tomato, cucumber, feta cheese, and roasted red onion on on house-made foccacia
+            %td.lunch-portions
+              %h6
+                $5.00
+            %td.lunch-portions
+              %h6
+                $8.99
+          %tr
+            %td
+              %h6
+                Cucumber Tomato
+              %div.sans-serif.food-desc
+                Cucumber, tomato, red onions, herbed white bean hummus, spinach, and cheddar on wild rice bread
+            %td.lunch-portions
+              %h6
+                $5.00
+            %td.lunch-portions
+              %h6
+                $8.99
+          %tr
+            %td
+              %h6
+                Toasted 4 Cheese
+              %div.sans-serif.food-desc
+                Cheddar, swiss, smoked provolone, gouda, tomato and our honey mustard mayonaise toasted on sourdough.
+                Add turkey, roast beef or ham for $0.75 on half order and $2.00 on whole
+            %td.lunch-portions
+              %h6
+                $4.00
+            %td.lunch-portions
+              %h6
+                $6.99
+          %tr
+            %td
+              %h6
+                Box Lunch
+              %div.sans-serif.food-desc
+                Includes a sandwich, potato chips, pickle, biscotti or shortbread, and an after dinner mint
+            %td.lunch-portions
+              %h6
+                $8.25
+              %div.sans-serif.food-desc
+                (4 Cheese)
+            %td.lunch-portions
+              %h6
+                $10.25
+              %div.sans-serif.food-desc
+                (All others)
+      
+      %br                
+      %br
+      %br
+
+      %div.table-responsive
+        %table.table.table-striped
+          %tr
+            %th#menu-header
+              Salads
+              %div.sans-serif#menu-sub-header
+                All come with a toasted dinner roll
+            %th.lunch-portions
+              Half
+            %th.lunch-portions
+              Whole
+          %tr
+            %td
+              %h6
+                Gorgonzola
+              %div.sans-serif.food-desc
+                Romaine, tomato, red onion, toasted walnuts, and house-made creamy gorgonzola dressing
+            %td.lunch-portions
+              %h6
+                $4.50
+            %td.lunch-portions
+              %h6
+                $7.50
+          %tr
+            %td
+              %h6
+                Chopped Italian
+              %div.sans-serif.food-desc
+                Romaine, red onions, Italian giardiniera, parmesan, and balsamic vinaigrette dressing
+            %td.lunch-portions
+              %h6
+                $4.50
+            %td.lunch-portions
+              %h6
+                $7.50
+          %tr
+            %td
+              %h6
+                Spring Greens
+              %div.sans-serif.food-desc
+                Spring greens tossed with house-made sweet and sour vinaigrette dressing
+            %td.lunch-portions
+              %h6
+                $4.00
+            %td.lunch-portions
+              %h6
+                $6.99
+          %tr
+            %td
+              %h6
+                Greek
+              %div.sans-serif.food-desc
+                Romaine, feta, red onions, cucumbers, tomatoes, kalamata olives and balsamic vinaigrette dressing
+            %td.lunch-portions
+              %h6
+                $4.50
+            %td.lunch-portions
+              %h6
+                $7.50
+          %tr
+            %td
+              %h6
+                MN Wild Rice
+              %div.sans-serif.food-desc
+                Spring greens, wild rice, shredded carrots, craisins, toasted pecans, red onions, and balsamic vinaigrette dressing
+            %td.lunch-portions
+              %h6
+                $4.50
+            %td.lunch-portions
+              %h6
+                $7.50
+          %tr
+            %td
+              %h6
+                Apple Walnut Salad
+              %div.sans-serif.food-desc
+                Spring greens, apples, walnuts, gorgonzola, and creamy poppy seed dressing
+            %td.lunch-portions
+              %h6
+                $4.50
+            %td.lunch-portions
+              %h6
+                $7.50
+          %tr
+            %td
+              %h6
+                Add Deli Meat
+            %td.lunch-portions
+            %td.lunch-portions
+              %h6
+                $2.00
+          %tr
+            %td
+              %h6
+                Add Hard Boiled Egg
+            %td.lunch-portions
+            %td.lunch-portions
+              %h6
+                $1.00
+          %tr
+            %td
+              %h6
+                Add Veggie
+            %td.lunch-portions
+            %td.lunch-portions
+              %h6
+                $1.00
+          %tr
+            %td
+              %h6
+                Add Cheese
+            %td.lunch-portions
+            %td.lunch-portions
+              %h6
+                $1.50
+          %tr
+            %td
+              %h6
+                Substitute GF Dinner Roll
+            %td.lunch-portions
+            %td.lunch-portions
+              %h6
+                $0.75
+
+      %br
+      %br
+      %br
+
+      %div.table-responsive
+        %table.table.table-striped
+          %tr
+            %th#menu-header
+              Soups
+              %div.sans-serif#menu-sub-header
+                All come with a toasted dinner roll
+            %th.lunch-portions
+              Cup
+            %th.lunch-portions
+              Bowl
+          %tr
+            %td
+              %h6
+                Meat and Veggie options available daily
+            %td.lunch-portions
+              $4.50
+            %td.lunch-portions
+              $5.50
+
+      %br
+
+      %div.container-fluid.to-top-link
+        = link_to "#top" do
+          Back To Top &#8593;
+
+    %div.col-md-3
+
+%br
+%br
+
+%div.container-fluid
+  %div.row-fluid#beverages
+    %div.col-md-3
+    %div.col-md-6
+      %h3
+        Beverages
+      %br
+      %div.table-responsive
+        %table.table.table-striped
+          %tr
+            %th
+            %th.drink-portions
+              Small
+            %th.drink-portions
+              Medium
+            %th.drink-portions
+              Large
+          %tr
+            %td
+              %h6
+                Brewed Coffee
+              %div.sans-serif.food-desc
+                Dark, Light, and Decaf served daily
+            %td.drink-portions
+              %h6
+                $1.85
+            %td.drink-portions
+              %h6
+                $2.25
+            %td.drink-portions
+              %h6
+                $2.60
+          %tr
+            %td
+              %h6
+                Latte
+              %div.sans-serif.food-desc
+                Espresso and steamed milk, topped with foam
+            %td.drink-portions
+              %h6
+                $3.25
+            %td.drink-portions
+              %h6
+                $3.72
+            %td.drink-portions
+              %h6
+                $4.18
+          %tr
+            %td
+              %h6
+                Cappuccino
+              %div.sans-serif.food-desc
+                Espresso, a little steamed milk, a lot of foam
+            %td.drink-portions
+              %h6
+                $3.25
+            %td.drink-portions
+              %h6
+                $3.72
+            %td.drink-portions
+              %h6
+                $4.18
+          %tr
+            %td
+              %h6
+                Hot Chocolate
+              %div.sans-serif.food-desc
+                Chocolate and steamed milk, topped with whipped cream
+            %td.drink-portions
+              %h6
+                $3.25
+            %td.drink-portions
+              %h6
+                $3.72
+            %td.drink-portions
+              %h6
+                $4.18
+          %tr
+            %td
+              %h6
+                Mocha
+              %div.sans-serif.food-desc
+                Espresso, chocolate, and steamed milk, topped with whipped cream
+            %td.drink-portions
+              %h6
+                $3.72
+            %td.drink-portions
+              %h6
+                $4.18
+            %td.drink-portions
+              %h6
+                $4.65
+          %tr
+            %td
+              %h6
+                Miel
+              %div.sans-serif.food-desc
+                Espresso, honey, and steamed milk, topped with foam
+            %td.drink-portions
+              %h6
+                $3.72
+            %td.drink-portions
+              %h6
+                $4.18
+            %td.drink-portions
+              %h6
+                $4.65
+          %tr
+            %td
+              %h6
+                Cubano
+              %div.sans-serif.food-desc
+                Espresso, brown sugar, and steamed milk, topped with foam
+            %td.drink-portions
+              %h6
+                $3.72
+            %td.drink-portions
+              %h6
+                $4.18
+            %td.drink-portions
+              %h6
+                $4.65
+          %tr
+            %td
+              %h6
+                Breve
+              %div.sans-serif.food-desc
+                Espresso and steamed 1/2 & 1/2, topped with foam
+            %td.drink-portions
+              %h6
+                $3.72
+            %td.drink-portions
+              %h6
+                $4.18
+            %td.drink-portions
+              %h6
+                $4.65
+          %tr
+            %td
+              %h6
+                Chai Latte
+              %div.sans-serif.food-desc
+                Big Train Chai and steamed milk
+            %td.drink-portions
+              %h6
+                $3.72
+            %td.drink-portions
+              %h6
+                $4.18
+            %td.drink-portions
+              %h6
+                $4.65
+          %tr
+            %td
+              %h6
+                Espresso
+            %td.drink-portions
+              %h6
+                $2.25
+                %br
+                (2 shots)
+            %td.drink-portions
+              %h6
+                :plain
+                  -
+            %td.drink-portions
+              %h6
+                $2.79
+                %br
+                (4 shots)
+          %tr
+            %td
+              %h6
+                Cold Press
+            %td.drink-portions
+              %h6
+                $3.25
+            %td.drink-portions
+              %h6
+                $3.72
+            %td.drink-portions
+              %h6
+                $4.25
+          %tr
+            %td
+              %h6
+                Iced Tea
+              %div.sans-serif.food-desc
+                Numi black iced tea
+            %td.drink-portions
+              %h6
+                :plain
+                  -
+            %td.drink-portions
+              %h6
+                $2.25
+            %td.drink-portions
+              %h6
+                $2.75
+          %tr
+            %td
+              %h6
+                Lemonade
+              %div.sans-serif.food-desc
+                House-made
+            %td.drink-portions
+              %h6
+                :plain
+                  -
+            %td.drink-portions
+              %h6
+                $2.25
+            %td.drink-portions
+              %h6
+                $2.75
+          %tr
+            %td
+              %h6
+                Arnold Palmer
+              %div.sans-serif.food-desc
+                Iced tea and lemonade
+            %td.drink-portions
+              %h6
+                :plain
+                  -
+            %td.drink-portions
+              %h6
+                $2.25
+            %td.drink-portions
+              %h6
+                $2.75
+          %tr
+            %td
+              %h6
+                Hibiscus Limeade
+              %div.sans-serif.food-desc
+                House-made limeade and whole leaf hibiscus tea
+            %td.drink-portions
+              %h6
+                :plain
+                  -
+            %td.drink-portions
+              %h6
+                $2.25
+            %td.drink-portions
+              %h6
+                $2.75
+          %tr
+            %td
+              %h6
+                Iced Tea
+              %div.sans-serif.food-desc
+                Numi black iced tea
+            %td.drink-portions
+              %h6
+                :plain
+                  -
+            %td.drink-portions
+              %h6
+                $2.25
+            %td.drink-portions
+              %h6
+                $2.75
+          %tr
+            %td
+              %h6
+                Coffee Smoothie
+              %div.sans-serif.food-desc
+                Cold, sweet blended coffee
+            %td.drink-portions
+              %h6
+                :plain
+                  -
+            %td.drink-portions
+              %h6
+                $4.75
+            %td.drink-portions
+              %h6
+                :plain
+                  -
+      %br
+      
+      %div.container-fluid.to-top-link
+        = link_to "#top" do
+          Back To Top &#8593;
+
+    %div.col-md-3
+
