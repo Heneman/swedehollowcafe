@@ -58,3 +58,7 @@ gem 'debugger', group: [:development, :test]
 
 # Needed for Heroku deployment
 gem 'rails_12factor', group: [:production]
+
+# New Relic
+gem 'newrelic_rpm'
+
