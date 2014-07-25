@@ -57,7 +57,10 @@ gem 'unicorn-rails'
 gem 'debugger', group: [:development, :test]
 
 # Needed for Heroku deployment
-gem 'rails_12factor', group: [:production]
+group :production do
+  gem 'rails_12factor'
+  gem 'rails_serve_static_assets'
+end
 
 # New Relic
 gem 'newrelic_rpm'
