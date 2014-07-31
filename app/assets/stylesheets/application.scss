@@ -101,11 +101,19 @@
 	padding: 5px;
 }
 
-.fb-comments {
-  width: 100% !important;
-  span, &.fb_iframe_widget span iframe {
-    width: 100% !important;
-  }
+/* This element holds injected scripts inside iframes that in some cases may stretch layouts. So, we're just hiding it. */
+#fb-root {
+  display: none;
+}
+
+/* Changes Like Box border */
+.like-box-container {
+	border: 1px solid #724923;
+	padding: 6px;
+}
+
+.fb-like-box {
+	border: 2px solid #724923;
 }
 
 #footer {
