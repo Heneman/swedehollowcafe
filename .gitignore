@@ -17,4 +17,4 @@
 .env
 
 # Ignore public/assets/ so Heroku compiles for production on push
-/public/assets/
+/public/assets/*
