@@ -1,0 +1,25 @@
+%div.container-fluid
+  %div.row-fluid#lunch
+    %div.col-md-3
+    %div.col-md-6
+      %h3
+        Lunch
+      %h6.sans-serif#breakfast-hours
+        Available after 10:30a
+      %br
+
+      = render :partial => "lunch_sandwiches"
+      
+      %br                
+      %br
+      %br
+
+      = render :partial => "lunch_salads"
+
+      %br
+      %br
+      %br
+
+      = render :partial => "lunch_soups"
+
+    %div.col-md-3
