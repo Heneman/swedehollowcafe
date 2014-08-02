@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   get 'gallery' => 'site#gallery'
 
-  get 'menu' => 'site#menu'
+  get 'menu' => 'menu#index'
 
   get 'catering' => 'site#catering'
 
