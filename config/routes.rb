@@ -1,14 +1,14 @@
 Rails.application.routes.draw do
   
-  get 'home' => "site#home"
+  get 'home' => "home#index"
 
-  get 'gallery' => 'site#gallery'
+  get 'gallery' => 'gallery#index'
 
   get 'menu' => 'menu#index'
 
-  get 'catering' => 'site#catering'
+  get 'catering' => 'catering#index'
 
-  root 'site#home'
+  root 'home#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
