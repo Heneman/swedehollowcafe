@@ -22,6 +22,10 @@
   border-radius: 0 !important;
 }
 
+body {
+	padding-top: 40px;
+}
+
 .sans-serif {
 	font-family: "Open Sans";
 	font-weight: 400;
@@ -59,10 +63,6 @@
 
 .nav-links {
 	font-size: 20px;
-}
-
-#menu-nav {
-	padding-top: 15px;
 }
 
 .page-header {
