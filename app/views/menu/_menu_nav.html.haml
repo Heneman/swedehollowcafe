@@ -1,16 +1,16 @@
-%div.container-fluid
+%div.container-fluid#menu-nav
   %div.row-fluid.nav-row-container
-    %div.row-fluid#menu-nav
+    %div.row-fluid
       %div.col-md-4
       %div.col-md-4
         %ul.nav.nav-pills.nav-justified
           %li
-            = link_to "Bakery", "#bakery"
+            = link_to "Bakery", "#top", id: "bakery-link"
           %li
-            = link_to "Breakfast", "#breakfast"
+            = link_to "Breakfast", "#top", id: "breakfast-link"
           %li
-            = link_to "Lunch", "#lunch"
+            = link_to "Lunch", "#top", id: "lunch-link"
           %li
-            = link_to "Beverages", "#beverages"
+            = link_to "Beverages", "#top", id: "beverages-link"
 
       %div.col-md-4
