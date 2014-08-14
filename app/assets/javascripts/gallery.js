@@ -19,7 +19,7 @@ jQuery(window).on("load", function(){
     helpers: {
       overlay: {
         css: {
-          'background': "rgba( 50, 50, 50, 0.70"
+          'background': "rgba( 50, 50, 50, 0.70 )"
         }
       }
     }
