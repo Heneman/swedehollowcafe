@@ -11,12 +11,20 @@
   %div.row-fluid#gallery-row
     %div.col-sm-2.col-md-2.col-lg-2
     %div.col-sm-8.col-md-8.col-md-8
-      %div
-        %h5.sans-serif#instagram-header
-          Tag Instagram&copy; photos with #swedehollow to see them here
+      / %h4.sans-serif#instagram-header #swedehollow
       %div.masonry#masonry
         - @images.each do |image|
           %div.image-box.col-sm-4.col-md-4.col-lg-4
             = link_to( image_tag( "gallery/#{ File.basename( image ) }", class: "img-responsive img-thumbnail"), image_url( "gallery/#{ File.basename( image ) }" ), class: "fancybox", rel: "gallery" )
 
     %div.col-sm-2.col-md-2.col-lg-2
+
+/ %div.container-fluid
+/   %div.row-fluid
+/     %div.col-sm-2.col-md-2.col-lg-2
+/     %div.col-sm-8.col-md-8.col-md-8
+/       %div.row-fluid
+/         %div#load-more-container
+/           %h3
+/             = link_to "Load More", "#more", id: "load-more"
+/     %div.col-sm-2.col-md-2.col-lg-2
