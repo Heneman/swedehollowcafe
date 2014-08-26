@@ -43,22 +43,21 @@
 
           %div.col-md-6
 
-    %div.container-fluid
-      %div.row-fluid.nav-row-container
-        %div.row-fluid#nav-row
-          %div.col-md-4
-          %div.col-md-4
-            %ul.nav.nav-justified
-              %li{ class: "nav-links #{ params[:action] == 'home' ? 'active' : '' }" }
-                = link_to "Home", "home"
-              %li{ class: "nav-links #{ params[:action] == 'gallery' ? 'active' : '' }" }
-                = link_to "Gallery", "gallery"
-              %li{ class: "nav-links #{ params[:action] == 'menu' ? 'active' : '' }" }
-                = link_to "Menu", "menu"
-              %li{ class: "nav-links #{ params[:action] == 'catering' ? 'active' : '' }" }
-                = link_to "Catering", "catering"
+    %div.container-fluid#nav-row-container
+      %div.row-fluid#nav-row
+        %div.col-md-3
+        %div.col-md-6
+          %ul.nav.nav-justified#navbar
+            %li{ class: "nav-links #{ params[:action] == 'home' ? 'active' : '' }" }
+              = link_to "Home", "home"
+            %li{ class: "nav-links #{ params[:action] == 'gallery' ? 'active' : '' }" }
+              = link_to "Gallery", "gallery"
+            %li{ class: "nav-links #{ params[:action] == 'menu' ? 'active' : '' }" }
+              = link_to "Menu", "menu"
+            %li{ class: "nav-links #{ params[:action] == 'catering' ? 'active' : '' }" }
+              = link_to "Catering", "catering"
 
-          %div.col-md-4
+        %div.col-md-3
 
     = yield
 

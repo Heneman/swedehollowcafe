@@ -1,16 +1,29 @@
 %div.container-fluid#menu-nav
-  %div.row-fluid.nav-row-container
+  %div.row-fluid#menu-nav-row-container
     %div.row-fluid
-      %div.col-md-4
-      %div.col-md-4
+      %div.col-md-2
+      %div.col-md-8
         %ul.nav.nav-pills.nav-justified
           %li
-            = link_to "Bakery", "#top", class: "menu-link"
-          %li
-            = link_to "Breakfast", "#top", class: "menu-link"
-          %li
-            = link_to "Lunch", "#top", class: "menu-link"
-          %li
-            = link_to "Beverages", "#top", class: "menu-link"
+            = link_to( image_tag( "gallery/IMG_3061.png", class: "image-responsive menu-images", id: "bakery-image" ), "#top", class: "menu-link-image" )
 
-      %div.col-md-4
+            = link_to( "Bakery", "#top", class: "menu-link" )
+
+          %li
+            = link_to( image_tag( "gallery/IMG_3161.png", class: "image-responsive menu-images", id: "breakfast-image" ), "#top", class: "menu-link-image" )
+
+            = link_to( "Breakfast", "#top", class: "menu-link" )
+
+          %li
+            = link_to( image_tag( "gallery/IMG_3090.png", class: "image-responsive menu-images", id: "lunch-image" ), "#top", class: "menu-link-image" )
+
+            = link_to( "Lunch", "#top", class: "menu-link" )
+
+          %li
+            = link_to( image_tag( "gallery/IMG_3070.png", class: "image-responsive menu-images", id: "beverage-image" ), "#top", class: "menu-link-image" )
+
+            = link_to( "Beverages", "#top", class: "menu-link" )
+
+        %hr#menu-hr
+
+      %div.col-md-2

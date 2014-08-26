@@ -52,11 +52,12 @@ body {
 	text-decoration: none !important;
 }
 
-#nav-row {
-	margin-top: 20px;
+#nav-row-container {
+	margin-top: 40px;
+	margin-bottom: 0px;
 }
 
-.nav-row-container {
+#menu-nav-row-container {
 	padding-left: 20px;
 	padding-right: 20px;
 }
@@ -105,10 +106,6 @@ body {
 .like-box-container {
 	border: 1px solid #724923;
 	padding: 6px;
-}
-
-.like-box-container iframe div._4-u2 {
-	border-color: #724923;
 }
 
 #footer {
@@ -168,6 +165,12 @@ body span#sunday-hours-label {
 	text-align: right;
 }
 
+.menu-images {
+	border: 1px solid #724923;
+	padding: 2px;
+	width: 100%
+}
+
 #breakfast-hours {
 	text-align: center;
 }
@@ -179,6 +182,16 @@ body span#sunday-hours-label {
 #menu-sub-header {
 	font-size: 14px;
 	padding-bottom: 10px;
+}
+
+#menu-hr {
+    border: 0;
+    height: 1px;
+    background: #724923;
+    background-image: -webkit-linear-gradient(left, #ccc, #724923, #ccc); 
+    background-image:    -moz-linear-gradient(left, #ccc, #724923, #ccc); 
+    background-image:     -ms-linear-gradient(left, #ccc, #724923, #ccc); 
+    background-image:      -o-linear-gradient(left, #ccc, #724923, #ccc); 
 }
 
 .lunch-portions {
@@ -202,7 +215,7 @@ table tr td div.food-desc {
 	margin: auto auto auto auto;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 991px) {
 	#address {
 		text-align: right;
 	}
