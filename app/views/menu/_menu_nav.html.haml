@@ -1,29 +1,31 @@
 %div.container-fluid#menu-nav
   %div.row-fluid#menu-nav-row-container
-    %div.row-fluid
-      %div.col-md-2
-      %div.col-md-8
-        %ul.nav.nav-pills.nav-justified
-          %li
-            = link_to( image_tag( "gallery/IMG_3061.png", class: "image-responsive menu-images", id: "bakery-image" ), "#top", class: "menu-link-image" )
+    %div.col-md-2
+    %div.col-md-8
+      %ul.nav.nav-justified
+        %li
 
-            = link_to( "Bakery", "#top", class: "menu-link" )
+          // `.html_safe` in link text Strings are because the images were scaling oddly from the link text Strings being different lengths and in the same list item as the images
 
-          %li
-            = link_to( image_tag( "gallery/IMG_3161.png", class: "image-responsive menu-images", id: "breakfast-image" ), "#top", class: "menu-link-image" )
+          = link_to( image_tag( "gallery/IMG_3061.png", class: "image-responsive menu-images menu-link", id: "bakery-image", :data => { :meal => "bakery" } ), "#top", class: "menu-link-image" )
 
-            = link_to( "Breakfast", "#top", class: "menu-link" )
+          = link_to( "Bakery&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".html_safe, "#top", class: "menu-link", :data => { :meal => "bakery" } )
 
-          %li
-            = link_to( image_tag( "gallery/IMG_3090.png", class: "image-responsive menu-images", id: "lunch-image" ), "#top", class: "menu-link-image" )
+        %li
+          = link_to( image_tag( "gallery/IMG_3161.png", class: "image-responsive menu-images menu-link", id: "breakfast-image", :data => { :meal => "breakfast" } ), "#top", class: "menu-link-image" )
 
-            = link_to( "Lunch", "#top", class: "menu-link" )
+          = link_to( "Breakfast&nbsp;".html_safe, "#top", class: "menu-link", :data => { :meal => "breakfast" } )
 
-          %li
-            = link_to( image_tag( "gallery/IMG_3070.png", class: "image-responsive menu-images", id: "beverage-image" ), "#top", class: "menu-link-image" )
+        %li
+          = link_to( image_tag( "gallery/IMG_3090.png", class: "image-responsive menu-images menu-link", id: "lunch-image", :data => { :meal => "lunch" } ), "#top", class: "menu-link-image" )
 
-            = link_to( "Beverages", "#top", class: "menu-link" )
+          = link_to( "&nbsp;&nbsp;&nbsp;Lunch&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".html_safe, "#top", class: "menu-link", :data => { :meal => "lunch" } )
 
-        %hr#menu-hr
+        %li
+          = link_to( image_tag( "gallery/IMG_3070.png", class: "image-responsive menu-images menu-link", id: "beverage-image", :data => { :meal => "beverages" } ), "#top", class: "menu-link-image" )
 
-      %div.col-md-2
+          = link_to( "Beverages", "#top", class: "menu-link", :data => { :meal => "beverages" } )
+
+      %hr#menu-hr
+
+    %div.col-md-2

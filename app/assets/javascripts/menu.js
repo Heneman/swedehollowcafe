@@ -1,10 +1,13 @@
 $(document).ready(function(){
   $(".menu-link").click(function(){
 
+    debugger;
+
     $(".menu-link").not( $(this) ).each(function(){
-      $( "#" + $(this).text().toLowerCase() + "-menu" ).fadeOut().addClass("hidden");
+      $( "#" + $(this).attr("data-meal") + "-menu" ).fadeOut().addClass("hidden");
     });
-    $( "#" + $(this).text().toLowerCase() + "-menu" ).fadeIn().removeClass("hidden");
+
+    $( "#" + $(this).attr("data-meal") + "-menu" ).fadeIn().removeClass("hidden");
     
   });
 
