@@ -50,12 +50,12 @@
           %ul.nav.nav-justified#navbar
             %li{ class: "nav-links #{ params[:action] == 'home' ? 'active' : '' }" }
               = link_to "Home", "home"
-            %li{ class: "nav-links #{ params[:action] == 'gallery' ? 'active' : '' }" }
-              = link_to "Gallery", "gallery"
+            %li{ class: "nav-links #{ params[:action] == 'about' ? 'active' : '' }" }
+              = link_to "About Us", "about"
             %li{ class: "nav-links #{ params[:action] == 'menu' ? 'active' : '' }" }
               = link_to "Menu", "menu"
-            %li{ class: "nav-links #{ params[:action] == 'catering' ? 'active' : '' }" }
-              = link_to "Catering", "catering"
+            %li{ class: "nav-links #{ params[:action] == 'gallery' ? 'active' : '' }" }
+              = link_to "Gallery", "gallery"
 
         %div.col-md-3
 

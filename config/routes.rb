@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
   get 'menu' => 'menu#index'
 
-  get 'catering' => 'catering#index'
+  get 'about' => 'about#index'
 
   root 'home#index'
 
