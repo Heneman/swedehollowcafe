@@ -5,8 +5,10 @@
 //= require instafeed.min.js
 
 
-$(document).ready(function(){
-  $(".fancybox").fancybox({
+$(document).ready(function()
+{
+  $(".fancybox").fancybox(
+  {
     helpers: {
       overlay: {
         css: {
@@ -17,8 +19,10 @@ $(document).ready(function(){
   });
 });
 
-$(window).load(function(){
-  $(".masonry").masonry({
+$(window).load(function()
+{
+  $(".masonry").masonry(
+  {
     itemSelector: ".image-box"
   });
 });
