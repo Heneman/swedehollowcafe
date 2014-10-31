@@ -2,8 +2,15 @@
   %div.row-fluid
     %div.col-md-3
     %div.col-md-6
+      %div.pdf_div
+        %span.glyphicon.glyphicon-download-alt
+        = link_to( 'Download PDF', menu_download_url(:menu => "breakfast") )
+        
+      %br
+      
       %h3
         Bakery
+
       %br
       %div.table-responsive
         %table.table.table-striped.sans-serif

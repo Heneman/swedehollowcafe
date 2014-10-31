@@ -1,12 +1,15 @@
 Rails.application.routes.draw do
   
-  get 'home' => "home#index"
+  get 'home' => 'home#index'
+
+  get 'about' => 'about#index'
+
+  get 'menu' => 'menu#index'
+  get 'menu/download' => 'menu#download_pdf'
 
   get 'gallery' => 'gallery#index'
 
-  get 'menu' => 'menu#index'
-
-  get 'about' => 'about#index'
+  get 'catering' => 'catering#index'
 
   root 'home#index'
 

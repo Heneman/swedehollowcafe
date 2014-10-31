@@ -2,10 +2,17 @@
   %div.row-fluid#breakfast
     %div.col-md-3
     %div.col-md-6
+      %div.pdf_div
+        %span.glyphicon.glyphicon-download-alt
+        = link_to( 'Download PDF', menu_download_url(:menu => "breakfast") )
+        
+      %br
+
       %h3
         Breakfast - Morning
       %h6.sans-serif#breakfast-hours
         Served weekdays from 6:30a - 10:30a
+
       %br
       %div.table-responsive
         %table.table.table-striped
