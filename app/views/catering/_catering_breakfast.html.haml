@@ -2,17 +2,25 @@
   %div.row-fluid#breakfast
     %div.col-md-3
     %div.col-md-6
+      %br
+
       %div.pdf_div
         %span.glyphicon.glyphicon-download-alt
         &nbsp;
-        = link_to( 'Download Breakfast Menu', menu_download_url(:menu => "breakfast") )
+        = link_to( 'Download PDF', menu_download_url(:menu => "catering") )
+
+      %br 
+      %br
+
+      %p.sans-serif#breakfast-hours
+        Please provide at least 48 hours notice for catering orders.
+        %br
+        10% gratuity added to orders of $30 or more, $10 fee for deliveries.
         
       %br
 
       %h3
-        Breakfast - Morning
-      %h6.sans-serif#breakfast-hours
-        Served weekdays from 6:30a - 10:30a
+        Breakfast
 
       %br
       %div.table-responsive
