@@ -8,4 +8,24 @@
           Catering
     %div.col-md-2
 
-= render :partial => "catering_breakfast"
+%div.container-fluid
+  %div.row-fluid
+    %div.col-md-2
+    %div.col-md-8
+      %div.content-text
+        %div.pdf_div
+          %span.glyphicon.glyphicon-download-alt
+          &nbsp;
+          = link_to( 'Download Catering Menu', menu_download_url(:menu => "catering") )
+
+        %br
+        %br
+
+        %p.sans-serif.center
+          Online Ordering is coming soon!  In the meantime we have a PDF of the Catering Menu
+          available for download and orders can by placed by calling:
+          %br 
+          %a{ href: "tel:6517768810" }
+            = number_to_phone( 6517768810, area_code: true )
+
+    %div.col-md-2
