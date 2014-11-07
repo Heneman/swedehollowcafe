@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  # Auto-set route to '/email_processor'
+  mount_griddler
   
   get 'home' => 'home#index'
 
