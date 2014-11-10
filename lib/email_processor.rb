@@ -1,7 +1,7 @@
 class EmailProcessor
   def initialize(email)
     @email = email
-    puts @email
+    puts @email.inspect
   end
 
   def process
