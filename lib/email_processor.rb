@@ -1,11 +1,12 @@
 class EmailProcessor
   def initialize(email)
     @email = email
-    puts @email.inspect
   end
 
   def process
+    puts "Inpection #1 " + @email.inspect
     Mail.deliver do
+      puts "Inspection #2 " + @email.inspect
       to 'kyle.heneman@gmail.com'
       from @email.from
       subject @email.subject
