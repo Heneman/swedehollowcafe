@@ -1,6 +1,10 @@
 class EmailProcessor
+  def initialize( email )
+    @email = email
 
-  def process( email )
+  def process
+    email = self.email
+
     Mail.deliver do | email |
       to 'kyle.heneman@gmail.com'
       from email.from
