@@ -11,7 +11,7 @@ class EmailProcessor
     mail[ :subject ] = @email.subject
     mail[ :body ] = @email.body
 
-    email.attachments.each { | attachment |
+    @email.attachments.each { | attachment |
       add_file :filename => File.basename( attachment ), :content => attachment
     }
   end
