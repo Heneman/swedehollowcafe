@@ -43,7 +43,10 @@
           %br
           %br
 
-          An online ordering form is coming soon.  In the meantime, you may call us at
+          An online ordering form is coming soon.  In the meantime, you may email us at
+          %span.underline
+            = mail_to( "info@swedehollowcafe.com" )
+          or call us at
           %a.underline{ href: "tel:6517768810" }
             = number_to_phone( 6517768810, area_code: true )
           for more information or to place an order. 
