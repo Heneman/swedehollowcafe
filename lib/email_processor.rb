@@ -6,7 +6,7 @@ class EmailProcessor
   def process
     mail = Mail.new
 
-    mail[ :to ] = "kyle.heneman@gmail.com"
+    mail[ :to ] = ENV["FORWARDING_EMAIL"]
     mail[ :from ] = @email.from[ :email ]
     mail[ :subject ] = @email.subject
     mail[ :body ] = @email.body
