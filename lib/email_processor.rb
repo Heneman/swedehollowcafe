@@ -1,10 +1,6 @@
 class EmailProcessor
   def initialize( email )
     @email = email
-    puts "To: " + @email.to.to_s
-    puts "From: " + @email.from.to_s
-    puts "Subject: " + @email.subject.to_s
-    puts "Body: " + @email.body.to_s
   end
 
   def process
