@@ -1,3 +1,13 @@
+#fb-root
+:javascript
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+
 %div.container-fluid
   %div.row-fluid
     %div.col-md-2
@@ -26,8 +36,11 @@
 
 %div.container-fluid#daily-specials
   %div.row-fluid
-    %div.col-md-2
-    %div.col-md-8#specials-column
+    %div.col-md-4
+    %div.col-md-4#specials-column
       .like-box-container
-        %iframe#fb_box{allowtransparency: "true", frameborder: "0", scrolling: "no", src: "//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FSwedeHollowCafe&width&height=395&colorscheme=light&show_faces=false&header=false&stream=true&show_border=false&appId=147219862027659", style: "border:2px solid #724923; overflow:hidden; width: 100%; height:395px;"}
-    %div.col-md-2
+        .fb-page{"data-adapt-container-width" => "true", "data-height" => "600", "data-hide-cover" => "false", "data-href" => "https://www.facebook.com/swedehollowcafe", "data-show-facepile" => "true", "data-small-header" => "true", "data-tabs" => "timeline", "data-width" => "500"}
+          .fb-xfbml-parse-ignore
+            %blockquote{:cite => "https://www.facebook.com/swedehollowcafe"}
+            %a{:href => "https://www.facebook.com/swedehollowcafe"} Swede Hollow Cafe
+    %div.col-md-4
