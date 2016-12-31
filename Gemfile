@@ -63,8 +63,8 @@ gem 'unicorn-rails'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-# Use debugger
-gem 'debugger', group: [:development, :test]
+# Use debugging gem
+gem 'byebug', group: [:development, :test]
 
 # Needed for Heroku deployment
 group :production do
@@ -74,4 +74,7 @@ end
 
 # New Relic
 gem 'newrelic_rpm'
+
+# Instagram gem
+gem 'instagram'
 
