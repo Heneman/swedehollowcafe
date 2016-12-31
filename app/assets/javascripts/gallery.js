@@ -4,9 +4,13 @@
 //= require jquery.mousewheel-3.0.6.pack.js
 //= require instafeed.min.js
 
-
-$(document).ready(function()
+$(window).on("load", function()
 {
+  $(".masonry").masonry(
+  {
+    itemSelector: ".image-box"
+  });
+
   $(".fancybox").fancybox(
   {
     helpers: {
@@ -17,13 +21,7 @@ $(document).ready(function()
       }
     }
   });
-});
 
-$(window).load(function()
-{
-  $(".masonry").masonry(
-  {
-    itemSelector: ".image-box"
-  });
+  
 });
 
