@@ -21,7 +21,5 @@ $(window).on("load", function()
       }
     }
   });
-
-  
 });
 
