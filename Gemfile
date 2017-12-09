@@ -75,6 +75,3 @@ end
 # New Relic
 gem 'newrelic_rpm'
 
-# Instagram gem
-gem 'instagram'
-
